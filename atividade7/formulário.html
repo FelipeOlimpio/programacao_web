@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Marcação de Consulta</title>
+</head>
+<body>
+  <h1>Marcação de Consulta</h1>
+  <form id="consultaForm">
+    <!-- Seção de Dados Pessoais -->
+    <h2>Dados Pessoais</h2>
+    <input type="text" id="nome" placeholder="Nome Completo">
+    <input type="text" id="cpf" placeholder="CPF">
+    <input type="date" id="dataNascimento" placeholder="Data de Nascimento">
+    <input type="text" id="endereco" placeholder="Endereço">
+    <input type="text" id="uf" placeholder="UF">
+    <input type="text" id="cep" placeholder="CEP">
+    <input type="email" id="email" placeholder="E-mail">
+    <input type="tel" id="telefone" placeholder="Telefone">
+
+    <!-- Seção de Dados da Consulta -->
+    <h2>Dados da Consulta</h2>
+    <select id="especialidade">
+      <option value="">Selecionar Especialidade</option>
+      <option value="cardiologia">Cardiologia</option>
+      <option value="dermatologia">Dermatologia</option>
+    </select>
+    <input type="datetime-local" id="dataHora" placeholder="Data e Hora">
+    <p>Medicamentos Alergicos:</p>
+    <input type="checkbox" id="antibioticos" value="antibioticos">
+    <label for="antibioticos">Antibióticos</label>
+    <input type="checkbox" id="antiInflamatorios" value="antiInflamatorios">
+    <label for="antiInflamatorios">Anti-inflamatórios</label>
+    <textarea id="infoAdicionais" placeholder="Informações Adicionais"></textarea>
+    
+    <button type="submit">Agendar Consulta</button>
+  </form>
+  
+  <p id="error"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
